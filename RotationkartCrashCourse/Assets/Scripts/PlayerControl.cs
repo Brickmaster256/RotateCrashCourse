@@ -18,5 +18,9 @@ public class PlayerControl : MonoBehaviour
         {
             playerRigidbody.AddForce(transform.right * speed);
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            playerRigidbody.AddForce(transform.right * -speed);
+        }
     }
 }
